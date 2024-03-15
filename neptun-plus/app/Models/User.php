@@ -18,6 +18,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'neptun_code',
+		'role_id',
         'email',
         'password',
     ];
