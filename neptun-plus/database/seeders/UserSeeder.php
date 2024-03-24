@@ -19,14 +19,26 @@ class UserSeeder extends Seeder
 				'neptun_code' => 'admin',
 				'role_id' => 1,
 				'email' => 'admin@admin.com',
-				'password' => 'admin123'
+				'password' => 'password'
 			],
 			[
-				'neptun_code' => 'abc123',
+				'neptun_code' => 'D5XZES',
 				'role_id' => 2,
-				'email' => 'teszt@teszt.com',
-				'password' => 'admin123'
-			]
+				'email' => 'D5XZES@teszt.com',
+				'password' => 'password'
+			],
+			[
+				'neptun_code' => 'A3RS1C',
+				'role_id' => 2,
+				'email' => 'A3RS1C@teszt.com',
+				'password' => 'password'
+			],
+			[
+				'neptun_code' => 'GH4MN2',
+				'role_id' => 2,
+				'email' => 'GH4MN2@teszt.com',
+				'password' => 'password'
+			],
 		];
 
 		foreach ($users as $user) {
