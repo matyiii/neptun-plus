@@ -5,15 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Role extends Model
+class Subject extends Model
 {
 	use HasFactory;
 
 	protected $connection = 'mysql';
-	protected $table = 'roles';
-	public $timestamps = false;
+	protected $table = 'subjects';
 
 	protected $fillable = [
 		'name',
+		'code',
+		'type',
 	];
+
+	public function courses()
+	{
+		return $this->hasMany(Course::class);
+	}
 }

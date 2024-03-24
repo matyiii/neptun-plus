@@ -9,43 +9,50 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+	use HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $fillable = [
-        'neptun_code',
+	protected $fillable = [
+		'neptun_code',
 		'role_id',
-        'email',
-        'password',
-    ];
+		'email',
+		'password',
+	];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-    protected $hidden = [
-        'password',
-    ];
+	protected $hidden = [
+		'password',
+	];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
-    {
-        return [
-            'password' => 'hashed',
-        ];
-    }
+	protected function casts(): array
+	{
+		return [
+			'password' => 'hashed',
+		];
+	}
 
 	public function role()
 	{
 		return $this->belongsTo(Role::class);
+	}
+
+	public function grades()
+	{
+		return $this->hasMany(Grade::class);
+	}
+
+	public function courses()
+	{
+		return $this->belongsToMany(Course::class, 'user_courses');
+	}
+
+	public function attendances()
+	{
+		return $this->hasMany(Attendance::class);
+	}
+
+	public static function getStudents()
+	{
+		return self::whereHas('role', function ($query) {
+			$query->where('id', 2);
+		})->get();
 	}
 }
