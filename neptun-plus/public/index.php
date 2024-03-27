@@ -133,7 +133,7 @@
 <footer class="footer">
     <div class="container">
         <a href="adatvedelmi_szabalyzat.pdf" download="Adatvédelmi Szabályzat">Adatvédelmi Szabályzat</a> |
-       
+        <a href="felhasznalasi_feltetelek.pdf" download="Felhasználási feltételek">Felhasználási feltételek</a> |
     </div>
 </footer>
 </html>
