@@ -134,6 +134,7 @@
     <div class="container">
         <a href="adatvedelmi_szabalyzat.pdf" download="Adatvédelmi Szabályzat">Adatvédelmi Szabályzat</a> |
         <a href="felhasznalasi_feltetelek.pdf" download="Felhasználási feltételek">Felhasználási feltételek</a> |
+        <a href="ssl_tanusitvany.pdf" download="SSL Tanúsítvány">SSL tanúsítvány</a>
     </div>
 </footer>
 </html>
