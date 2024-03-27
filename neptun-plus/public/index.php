@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neptun+</title>
     <style>
-
-        
         /* CSS a felugró ablakhoz */
         .popup {
             display: none;
