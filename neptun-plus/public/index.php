@@ -8,18 +8,35 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            background-image: url('hatterkep.webp'); /* Az útvonal a feltöltött kép helyére mutat */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed; /* Ez gondoskodik arról, hogy a háttérkép rögzített legyen, nem görgethető */
+            }
         /* CSS a felugró ablakhoz */
         nav {
-            background-color: #333;
-            padding: 10px;
+            display: flex;
+            justify-content: space-between; /* Szétosztja az elemeket az oldal szélein */
+            align-items: center;
+            position: absolute; /* Pozícionálja az elemeket az oldal szélein */
+            width: 100%;
+            top: 50%; /* Függőleges középre helyezi */
+            transform: translateY(-50%); /* Középre igazítás a függőleges tengelyen */
+            padding: 0 30px;
+            }
+        nav {
+            
+            
             color: white;
             text-align: center;
         }
 
         nav a {
-            color: white;
+            color: rgb(59, 35, 35);
             text-decoration: none;
-            margin: 0 10px;
+            margin-right: auto;
+            margin-left: auto;
             cursor: pointer;
         }
 
