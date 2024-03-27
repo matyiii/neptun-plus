@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-image: url('hatterkep.webp'); /* Az útvonal a feltöltött kép helyére mutat */
+            background-image: url('hatterkep.webp'); 
             background-size: cover;
             background-position: center center;
-            background-attachment: fixed; /* Ez gondoskodik arról, hogy a háttérkép rögzített legyen, nem görgethető */
+            background-attachment: fixed;
             }
-        /* CSS a felugró ablakhoz */
+        
         nav {
             display: flex;
-            justify-content: space-between; /* Szétosztja az elemeket az oldal szélein */
+            justify-content: space-between; 
             align-items: center;
-            position: absolute; /* Pozícionálja az elemeket az oldal szélein */
+            position: absolute; 
             width: 100%;
-            top: 50%; /* Függőleges középre helyezi */
-            transform: translateY(-50%); /* Középre igazítás a függőleges tengelyen */
+            top: 50%; 
+            transform: translateY(-50%); 
             padding: 0 30px;
             }
         nav {
@@ -38,9 +38,13 @@
             margin-right: auto;
             margin-left: auto;
             cursor: pointer;
+            font-family: 'Roboto', sans-serif; 
+            font-weight: bold; 
+            font-size: 24px; 
+            color: #1b1010; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
         }
 
-        /* CSS a felugró ablakhoz */
         .overlay {
             display: none;
             position: fixed;
@@ -76,7 +80,7 @@
         <a onclick="openPopup('oktato')">Oktató</a>
     </nav>
 
-    <!-- Felugró ablak -->
+
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup">
         <div class="popup-content">
@@ -93,7 +97,7 @@
     </div>
 
     <script>
-        // JavaScript a felugró ablak vezérléséhez
+      
         function openPopup(userType) {
             document.getElementById("overlay").style.display = "block";
             document.getElementById("popup").style.display = "block";
