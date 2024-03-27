@@ -72,6 +72,26 @@
         .popup-content {
             text-align: center;
         }
+        .footer {
+            background-color: #f8f9fa; /* Világos háttérszín */
+            color: #5a5a5a; /* Szöveg színe */
+            text-align: center; /* Szöveg középre igazítása */
+            padding: 10px 0; /* Kis függőleges padding */
+            position: fixed; /* Rögzített lábléc */
+            bottom: 0; /* Az oldal aljához igazítva */
+            width: 100%; /* Szélessége a teljes oldalnak */
+         border-top: 1px solid #e7e7e7; /* Elválasztó vonal a tetején */
+            }
+
+        .footer a {
+            color: #5a5a5a; /* Linkek színe */
+            text-decoration: none; /* Nincs aláhúzás */
+            margin: 0 10px; /* Margin a linkek között */
+            }
+
+        .footer a:hover {
+            text-decoration: underline; /* Aláhúzás ha az egér fölött van */
+            }
     </style>
 </head>
 <body>
@@ -110,4 +130,10 @@
         }
     </script>
 </body>
+<footer class="footer">
+    <div class="container">
+        <a href="adatvedelmi_szabalyzat.pdf" download="Adatvédelmi Szabályzat">Adatvédelmi Szabályzat</a> |
+       
+    </div>
+</footer>
 </html>
