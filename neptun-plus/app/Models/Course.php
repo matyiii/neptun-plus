@@ -19,7 +19,7 @@ class Course extends Model
 
     public function subject()
     {
-        return $this->belongsTo(Subject::class, 'id', 'subject_id');
+        return $this->belongsTo(Subject::class, 'subject_id', 'id');
     }
 
     public function users()
