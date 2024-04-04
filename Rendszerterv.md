@@ -120,7 +120,7 @@ A felhasználók számára különböző menüpontok állnak rendelkezésre a re
 - Verziókezelő rendszer: Github
 - Tesztelő eszközök: Cypress
 
-## 8. Architekturális terv
+## 7. Architekturális terv
 
 ### Webszerver
 
@@ -134,7 +134,7 @@ Az adatok tárolására a MySQL adatbázis rendszert használjuk alapértelmezet
 
 A felhasználók a webes alkalmazáson keresztül érhetik el a rendszert, amely elérhető lesz asztali és mobil webböngészőkben. Az adminisztrátorok speciális jogosultságokkal rendelkeznek a rendszer kezeléséhez.
 
-### 9. Adatbázis terv
+### 8. Adatbázis terv
 
 Az adatbázis terv a rendszer által tárolt adatok struktúráját írja le, beleértve az adattáblák struktúráját, azok közötti kapcsolatokat és az attribútumokat. Például:
 
@@ -184,7 +184,7 @@ Az adatbázis terv a rendszer által tárolt adatok struktúráját írja le, be
    - course_id: INTEGER (idegen kulcs, hivatkozik a courses tábla id oszlopára)
    - grade: INTEGER (jegy értéke)
 
-### 10. Implementációs terv
+### 9. Implementációs terv
 
 Az implementációs terv részletezi a fejlesztési folyamatot, beleértve a programozási nyelveket, keretrendszereket és egyéb eszközöket, amelyeket a fejlesztőcsapat használni fog. Például:
 
@@ -199,7 +199,7 @@ Az implementációs terv részletezi a fejlesztési folyamatot, beleértve a pro
   - Adatbázis: MySQL
   - Fejlesztőeszköz: Visual Studio Code
 
-### 11. Tesztterv
+### 10. Tesztterv
 
 #### Tesztelési célok
 
@@ -217,7 +217,7 @@ A tesztelés célja a rendszer funkcionalitásának, teljesítményének és biz
 
 A tesztterv részeként létrehozott tesztesetek részletesen leírják a tesztelendő szcenáriókat, az elvárt eredményeket és a tesztvégrehajtás lépéseit.
 
-### 12. Telepítési terv
+### 11. Telepítési terv
 
 A telepítési terv részletezi a rendszer telepítésének folyamatát a különböző környezetekben. Például:
 
@@ -253,7 +253,7 @@ A telepítési terv részletezi a rendszer telepítésének folyamatát a külö
 4. A telepítési folyamat végére érés és a rendszer inicializálása.
 5. A telepítés sikeres befejezése és az alkalmazás elérhetővé válása a felhasználók számára.
 
-### 13. Karbantartási terv
+### 12. Karbantartási terv
 
 A karbantartási terv célja a rendszer hosszú távú működésének biztosítása és annak megfelelő állapotban tartása. A következő tevékenységeket tartalmazza:
 
