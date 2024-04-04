@@ -211,6 +211,7 @@ A tesztelés célja a rendszer funkcionalitásának, teljesítményének és biz
 - Funkcionális tesztelés: A rendszer különböző funkcióinak tesztelése, hogy ellenőrizzük, hogy megfelelnek-e a követelményeknek.
 - Teljesítménytesztelés: A rendszer teljesítményének mérése különböző terhelési szinteken.
 - Biztonsági tesztelés: A rendszer biztonságának ellenőrzése különböző tesztekkel, például penetrációs tesztekkel.
+- Automatizált felületesztelés: Az alkalmazás felhasználói felületének automatizált tesztelése, például Cypress vagy Selenium segítségével.
 
 #### Tesztesetek
 
