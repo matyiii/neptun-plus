@@ -38,7 +38,13 @@ Ezen célok megvalósítása révén a rendszer hozzájárul az oktatási folyam
 
 ### 2.4 Mérföldkövek:
 
-- Prototípus átadása: 2024.04.06.
+- Prototípus átadása: A prototípus teljes körű funkcióinak átadása és bemutatása a megrendelőnek és érintett feleknek a visszajelzések és további fejlesztési igények gyűjtése érdekében. (2024.04.06.)
+
+- Fő funkciók elkészítése: A rendszer alapvető funkcióinak, mint például a felhasználói regisztráció, bejelentkezés, órarend készítés, jegyek rögzítése és kezelése, teljes körű kifejlesztése és működésre kész állapotba hozása. (Kalkuláció...)
+
+- Tesztelés és hibajavítás: A teljes rendszer alapos tesztelése különböző környezetekben és felhasználói esetekben, valamint a felfedezett hibák javítása és a stabilitás biztosítása. (Kalkuláció...)
+
+- Bemutatás és átadás: A kész rendszer bemutatása és átadása a megrendelőnek és érintett feleknek, valamint a dokumentáció teljes körű elkészítése és átadása. (Kalkuláció...)
 
 ## 3. Üzleti folyamatok modellje
 
