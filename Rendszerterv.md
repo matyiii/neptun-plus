@@ -1,6 +1,6 @@
 ## 1. Rendszer célja
 
-- A cél egy olyan adminisztrációs rendszer létrehozása, mely számos funkciót biztosít mind az egyetemisták számára, mind az oktatóknak. A funkciók közé tartozik a hiányzások illetve jelenlétek nyomonkövetése, érdemjegyek rögzítése és átlagszámítás, és további adminisztratív feladatok.
+ A cél egy olyan adminisztrációs rendszer létrehozása, mely számos funkciót biztosít mind az egyetemisták számára, mind az oktatóknak. A funkciók közé tartozik a hiányzások illetve jelenlétek nyomonkövetése, érdemjegyek rögzítése és átlagszámítás, és további adminisztratív feladatok.
 
 ## 2. Projektterv
 
