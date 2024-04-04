@@ -128,7 +128,7 @@ A rendszer a Model-View-Controller (MVC) tervezési mintát követi, ahol a mode
 
 ### Adatbázis rendszer
 
-Az adatok tárolására a MySQL adatbázis rendszert használjuk. Az adatbázis séma relációs adatmodellt követ, amelyben az entitások közötti kapcsolatokat kulcsok segítségével valósítjuk meg.
+Az adatok tárolására a MySQL adatbázis rendszert használjuk alapértelmezetten. Az adatbázis séma relációs adatmodellt követ, amelyben az entitások közötti kapcsolatokat kulcsok segítségével valósítjuk meg. A rendszer lehetőséget biztosít másik adatbázisrendszerek, mint például PostgreSQL vagy SQLite, használatára is, mivel a keretrendszer támogatja ezeket a lehetőségeket.
 
 ### A program elérése, kezelése
 
