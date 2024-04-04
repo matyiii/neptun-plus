@@ -190,12 +190,12 @@ Az implementációs terv részletezi a fejlesztési folyamatot, beleértve a pro
 
 - **Frontend fejlesztés:**
   - Programozási nyelv: HTML, CSS, Bootstrap
-  - Keretrendszer: Laravell
+  - Keretrendszer: Laravel
   - Fejlesztőeszköz: Visual Studio Code
 
 - **Backend fejlesztés:**
   - Programozási nyelv: PHP
-  - Webes keretrendszer: Laravell
+  - Webes keretrendszer: Laravel
   - Adatbázis: MySQL
   - Fejlesztőeszköz: Visual Studio Code
 
