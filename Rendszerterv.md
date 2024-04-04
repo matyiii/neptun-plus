@@ -6,15 +6,15 @@
 
 ### 2.1 Projektszerepkörök, felelőségek:
 
-- Scrum master: A Scrum folyamat megvalósításáért felelős, biztosítja a csapat hatékony működését.
-- Product owner: Az ügyfél vagy ügyfél képviselőjeként a termékért felelős, a csapatnak irányt mutat az ő elképzelései vagy elvárásai felé.
-- Üzleti szereplő: Az üzleti igényeket képviseli, biztosítja az üzleti célkitűzések megvalósítását.
+- Scrum master: A Scrum folyamat megvalósításáért felelős, biztosítja a csapat hatékony működését.| Mezőfi Máté
+- Product owner: Az ügyfél vagy ügyfél képviselőjeként a termékért felelős, a csapatnak irányt mutat az ő elképzelései vagy elvárásai felé. | Bagoly Gábor
+- Üzleti szereplő: Az üzleti igényeket képviseli, biztosítja az üzleti célkitűzések megvalósítását. | Barna Péter
 
 ### 2.2 Projektmunkások és felelőségek:
 
-- Frontend: A felhasználói felület fejlesztéséért és karbantartásáért felelős.
-- Backend: A szerveroldali logika és adatkezelés fejlesztéséért és karbantartásáért felelős.
-- Tesztelés: A rendszer teszteléséért és hibajavításért felelős.
+- Frontend: A felhasználói felület fejlesztéséért és karbantartásáért felelős. | Nagy Tamás, Apjok Alex
+- Backend: A szerveroldali logika és adatkezelés fejlesztéséért és karbantartásáért felelős. | Mezőfi Máté
+- Tesztelés: A rendszer teszteléséért és hibajavításért felelős. | Barna Péter
 
 ### 2.3 Ütemterv:
 
