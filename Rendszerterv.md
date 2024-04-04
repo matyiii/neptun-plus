@@ -255,10 +255,32 @@ A telepítési terv részletezi a rendszer telepítésének folyamatát a külö
 
 ### 13. Karbantartási terv
 
-Fontos ellenőrizni:
+A karbantartási terv célja a rendszer hosszú távú működésének biztosítása és annak megfelelő állapotban tartása. A következő tevékenységeket tartalmazza:
 
-- Rendszeres biztonsági mentések készítése az adatokról.
-- Rendszerfrissítések telepítése és karbantartása.
+1. Rendszeres biztonsági mentékek készítése az adatokról:
+   - Automatizált mentési folyamat beállítása az adatbázisról és a rendszer konfigurációs állományairól.
+   - Rendszeres időközönkénti biztonsági mentések készítése és tárolása.
+   - Mentési folyamatok rendszeres ellenőrzése és tesztelése a helyes működés érdekében.
 
+2. Rendszerfrissítések telepítése és karbantartása:
+   - Rendszerkomponensek és függőségek frissítésének monitorozása és tervezése.
+   - Rendszeres frissítések telepítése biztonsági hibák, teljesítményproblémák vagy új funkciók bevezetése céljából.
+   - Frissítési folyamatok dokumentálása és nyomon követése.
+
+3. Felhasználói visszajelzések gyűjtése és figyelembevétele a továbbfejlesztés során:
+   - Felhasználói visszajelzési csatornák biztosítása, például felhasználói támogatási rendszer vagy visszajelzési űrlap.
+   - Beérkező visszajelzések rendszeres monitorozása és értékelése.
+   - Fontos felhasználói igények és javaslatok beépítése a rendszer fejlesztési tervébe és prioritásokba.
+
+4. Teljesítményfigyelés és optimalizálás:
+   - Rendszeres teljesítménymérés és monitorozás a teljesítményproblémák azonosítása érdekében.
+   - Teljesítményproblémák kezelése, például adatbázis-indexek létrehozása, lekérdezésoptimalizálás vagy infrastruktúra skálázása.
+
+5. Hiba- és problémajavítás:
+   - Bejelentett hibák és problémák nyomon követése és dokumentálása.
+   - Hiba- és problémajavítási folyamat beállítása és végrehajtása, beleértve a hibajegyek kezelését és tesztelését.
+   - Sürgős hibák azonnali kezelése, ideiglenes megoldások biztosítása és hosszú távú javítások tervezése.
+
+A karbantartási terv folyamatosan frissül és adaptálódik a rendszer működése során felmerülő új igények és kihívások alapján.
 
 
