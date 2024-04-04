@@ -1,6 +1,14 @@
 ## 1. Rendszer célja
 
- A cél egy olyan adminisztrációs rendszer létrehozása, mely számos funkciót biztosít mind az egyetemisták számára, mind az oktatóknak. A funkciók közé tartozik a hiányzások illetve jelenlétek nyomonkövetése, érdemjegyek rögzítése és átlagszámítás, és további adminisztratív feladatok.
+A rendszer célja egy olyan adminisztrációs és oktatási platform létrehozása, mely számos funkciót biztosít mind az egyetemisták számára, mind az oktatóknak és adminisztrátoroknak. A fő célok közé tartozik:
+
+- Hallgatói adminisztráció: Lehetővé teszi a hallgatók számára, hogy regisztráljanak kurzusokra, nyomon kövessék az órarendjüket és értékeléseiket, valamint hozzáférjenek az oktatói visszajelzésekhez.
+
+- Oktatási támogatás: Segíti az oktatókat az órák jelenléti nyilvántartásában, érdemjegyek rögzítésében és hallgatói teljesítményük értékelésében.
+
+- Adminisztratív feladatok kezelése: Adminisztrátoroknak lehetővé teszi a felhasználói fiókok és jogosultságok kezelését, valamint a rendszer konfigurációjának és beállításainak felügyeletét.
+
+Ezen célok megvalósítása révén a rendszer hozzájárul az oktatási folyamat hatékonyságának növeléséhez, a hallgatók és oktatók közötti kommunikáció javításához, valamint az adminisztratív teher csökkentéséhez az egyetemi közösség számára.
 
 ## 2. Projektterv
 
