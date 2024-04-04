@@ -221,13 +221,37 @@ A tesztterv részeként létrehozott tesztesetek részletesen leírják a teszte
 
 A telepítési terv részletezi a rendszer telepítésének folyamatát a különböző környezetekben. Például:
 
-**Fizikai telepítési terv:**
-- A rendszer telepítése a szerverekre vagy felhőalapú infrastruktúrára.
-- A szükséges szoftverek és függőségek telepítése.
+#### Fizikai telepítési terv:
 
-**Szoftver telepítési terv:**
-- Az alkalmazás elérhetősége és telepítése az ügyfelek számára.
-- Az alkalmazás frissítési folyamata és verziókezelése.
+1. A rendszer telepítése a szerverekre vagy felhőalapú infrastruktúrára:
+   - A szükséges hardveres követelmények ellenőrzése és biztosítása.
+   - Telepítési médium előkészítése és telepítési folyamat indítása.
+   - Rendszerkonfiguráció beállítása és inicializálása.
+
+2. A szükséges szoftverek és függőségek telepítése:
+   - Operációs rendszer frissítése és konfigurálása.
+   - Szükséges szoftverek (pl. adatbázis szerver, webkiszolgáló) telepítése és konfigurálása.
+   - Függőségek feloldása és szükséges konfigurációk végrehajtása.
+
+#### Szoftver telepítési terv:
+
+1. Az alkalmazás elérhetősége és telepítése az ügyfelek számára:
+   - Telepítési folyamat dokumentálása és publikálása.
+   - Telepítési csomag előkészítése és letöltési lehetőségek biztosítása.
+   - Telepítési utasítások megadása és felhasználói dokumentáció elkészítése.
+
+2. Az alkalmazás frissítési folyamata és verziókezelése:
+   - Verziókövetés és verziókezelési rendszer beállítása.
+   - Frissítési folyamat dokumentálása és kommunikáció a felhasználók felé.
+   - Frissítési csomagok elkészítése és tesztelése.
+
+#### Telepítési folyamat:
+
+1. A telepítési csomag letöltése a hivatalos forrásból.
+2. A telepítési folyamat elindítása és az alkalmazás telepítésének kezdeti lépései végrehajtása.
+3. A telepítőprogram által kérdezett konfigurációs beállítások megadása és elfogadása.
+4. A telepítési folyamat végére érés és a rendszer inicializálása.
+5. A telepítés sikeres befejezése és az alkalmazás elérhetővé válása a felhasználók számára.
 
 ### 13. Karbantartási terv
 
