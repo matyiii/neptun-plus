@@ -54,12 +54,23 @@
 | --- | --- | --- |
 | K1 | Felhasználói regisztráció | A hallgatók regisztrálni tudnak a rendszerbe. |
 | K2 | Képernyőtervek megjelenítése | A rendszer megjeleníti a felhasználói felület tervezett képernyőit. |
+| K3 | Bejelentkezés | Regisztrált felhasználók bejelentkezhetnek a rendszerbe. |
+| K4 | Jelszókezelés | A felhasználók jelszavukat meg tudják változtatni, illetve vissza tudják állítani elfelejtett jelszó esetén. |
+| K5 | Jegyek kezelése | Oktatók jegyeket tudnak adni és módosítani a hallgatóknak. |
+| K6 | Jelenlétek nyilvántartása | Oktatók nyilvántarthatják a hallgatók jelenlétét órákon. |
+| K7 | Felhasználói jogosultságok kezelése | Adminisztrátorok felhasználói jogosultságokat tudnak kezelni (pl. új felhasználó létrehozása, jogosultságok módosítása, felhasználó törlése). |
 
 ### Nemfunkcionális követelmények
 
 | ID | Megnevezés | Leírás |
 | --- | --- | --- |
-| K4 | Teljesítmény | A rendszernek gyorsan kell válaszolnia még nagy terhelés mellett is. |
+| K8 | Teljesítmény | A rendszernek gyorsan kell válaszolnia még nagy terhelés mellett is. |
+| K9 | Felhasználóbarát felület | Az alkalmazásnak egy intuitív, könnyen kezelhető felhasználói felülettel kell rendelkeznie. |
+| K10 | Letisztult design | Az alkalmazásnak szép és letisztult designnal kell rendelkeznie, amely könnyen értelmezhető és esztétikus. |
+| K11 | Megbízhatóság | Az alkalmazásnak stabilnak és megbízhatónak kell lennie, minimálisra csökkentve a leállások és hibák előfordulását. |
+| K12 | Teljesítmény | Az alkalmazásnak gyorsan kell működnie, a felhasználók számára gyors válaszidővel. |
+| K13 | Skálázhatóság | Az alkalmazásnak képesnek kell lennie a könnyű horizontális és vertikális skálázhatóságra, hogy növekedés esetén is hatékonyan működjön. |
+| K14 | Biztonság | Az alkalmazásnak biztonságosnak kell lennie, megfelelő adatvédelmi intézkedésekkel, például jelszóvédelemmel és hitelesítési mechanizmusokkal. | 
 
 ### Támogatott eszközök
 
