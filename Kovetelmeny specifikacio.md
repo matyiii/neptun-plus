@@ -11,6 +11,9 @@ Egyszerű, könnyen kezelhető weboldal létrehozása, amely a jelenlegi papír 
 A rendszer lehetőséget fog nyújtani a tanulók jelenlétének rögzítésére és hiányzások követésére is. Hiányzás esetén igazolások leadására szintén lehetőség lesz. Fontos funkció lesz még az érdemjegyek regisztrációja és a tanulmányi átlagok automatikus kalkulációja. Ebből következik, hogy tanegységek rögzítésére is alkalmas lesz a kész produktum.
 
 ## 4. Jelenlegi üzleti folyamatok modellje
+- Hallgatók regisztrációja kurzusokra
+- Órarend készítése
+- Jegyek kiadása és kezelése
 
 ## 5. Igényelt üzleti folyamatok modellje
 
