@@ -1,6 +1,7 @@
 # Követelmény specifikáció
 
 ## 1. Áttekintés
+A projekt célja egy olyan rendszer megvalósítása, amely az adminisztrációs folyamatokat modernizálja. Funkciói jelenlét és hiányzás követés, érdemjegyek vezetése és tanulmányi átlagok automatikus kalkulációja.
 
 ## 2. A jelenlegi helyzet leírása
 
