@@ -21,6 +21,38 @@ A rendszer lehetőséget fog nyújtani a tanulók jelenlétének rögzítésére
 - Jegyek kiadása és kezelése
 
 ## 6. Követelménylista
+ID: K1  
+Modul: Jogosultság  
+Név: Bejelentkezési felület Leírás: E-mail és jelszó segítségével a felhasználó bejelentkezik
 
+ID: K2
+Modul: Jogosultság
+Név: Jogosultsági szintek
+Leírás: Admin: Felhasználók kezelése (létrehozás, törlés, jogosultságok módosítása)Rendszerbeállítások kezelése; Oktató: Érdemjegyek vezetése és jelenlétek vezetése; Jegyek és jelenléti riport megtekintése
+
+ID: K3
+Modul: Oktatói adminisztráció
+Név: Érdemjegy rögzítés
+Leírás: Az oktatók a diákokhoz tudnak rögzíteni érdemjegyeket
+
+ID: K4
+Modul: Oktatói adminisztráció
+Név: Hiányzás rögzítés
+Leírás: Az oktatók a diákokhoz tudnak rögzíteni jelenléti státuszt
+
+ID: K5
+Modul: Oktatói adminisztráció
+Név: Hiányzás rögzítés
+Leírás: Az oktatók a diákokhoz tudnak rögzíteni jelenléti státuszt
+
+ID: K6
+Modul: Hallgatói adminisztráció
+Név: Igazolás leadás
+Leírás: A hallgatók igazolást tudnak leadni
+
+ID: K7
+Modul: Riport
+Név: Tanulmányi átlagok megtekintése
+Leírás: A tanulmányi átlag megtekintésére ad lehetőséget
 
 ## 7. Fogalomtár
