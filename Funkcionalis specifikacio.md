@@ -1,5 +1,6 @@
 # Funkcionális specifikáció
 ## 1. Jelenlegi helyzet leírása
+Jelenleg a Neptun rendszer a leggyakoribb és legelterjedtebb adminisztrációs eszköz az oktatási intézményekben. Azonban hiányosságai vannak, különösen az adminisztrációs folyamatok digitalizációja terén.
 
 ## 2. Vágyálomrendszer leírása
 
