@@ -71,9 +71,13 @@ Igazolja a hiányzást.
 Kimenet: Sikeres hiányzás igazolása.
 
 ## 10. Funkció - követelmény megfeleltetése
-
 | Id | Követelmény | Funkció |
-| :---: | --- | --- |
-| K4 | ... | ... |
+| K1 | Felhasználói regisztráció | Felhasználók regisztrálása a rendszerbe |
+| K2 | Képernyőtervek megjelenítése | A rendszer megjeleníti a felhasználói felület tervezett képernyőit |
+| K3 | Bejelentkezés | Regisztrált felhasználók bejelentkezése a rendszerbe |
+| K4 | Jelszókezelés | Felhasználók jelszavának módosítása és visszaállítása |
+| K5 | Jegyek kezelése | Oktatók jegyeket adhatnak és módosíthatnak hallgatóknak |
+| K6 | Jelenlétek nyilvántartása | Oktatók nyilvántarthatják a hallgatók jelenlétét |
+| K7 | Felhasználói jogosultságok kezelése | Adminisztrátorok felhasználói jogosultságokat kezelhetnek |
 
 ## 11 Fogalomszótár
