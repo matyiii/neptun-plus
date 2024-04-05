@@ -6,6 +6,9 @@ Jelenleg a Neptun rendszer a leggyakoribb és legelterjedtebb adminisztrációs 
 Egy könnyen kezelhető, modern webalkalmazás létrehozása a Neptun rendszer kiegészítéseként. Az új rendszernek lehetővé kell tennie a jelenlegi papír alapú adminisztrációs folyamatok digitalizálását. Fontos, hogy csak regisztrált felhasználók férhessenek hozzá a felülethez. A rendszer alapvető funkcionalitásai között szerepel a tanulók jelenlétének rögzítése, hiányzások követése, hiányzások igazolásának lehetősége, érdemjegyek regisztrálása és a tanulmányi átlagok automatikus kalkulációja.
 
 ## 3. Jelenlegi üzleti folyamatok modellje
+- Hallgatók regisztrációja kurzusokra
+- Órarend készítése
+- Jegyek kiadása és kezelése
 
 ## 4. Igényelt üzleti folyamatok modellje
 
