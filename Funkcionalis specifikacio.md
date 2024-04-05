@@ -27,6 +27,11 @@ Egy könnyen kezelhető, modern webalkalmazás létrehozása a Neptun rendszer k
 | K7 | Felhasználói jogosultságok kezelése | Adminisztrátorok felhasználói jogosultságokat tudnak kezelni (pl. új felhasználó létrehozása, jogosultságok módosítása, felhasználó törlése). |
 
 ## 6. Használati esetek
+- Felhasználó regisztrációja és bejelentkezése
+- Hiányzások rögzítése és igazolása
+- Érdemjegyek rögzítése
+- Tanulmányi átlagok kiszámítása
+- Tanegységek rögzítése és kezelése
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
 
