@@ -42,7 +42,6 @@ Egy könnyen kezelhető, modern webalkalmazás létrehozása a Neptun rendszer k
 | Tanegységek rögzítése és kezelése	| - |
 
 ## 8. Képernyőtervek
-
 ![képnév](gitlink ahol a kép van)
 
 ## 9. Forgatókönyvek
