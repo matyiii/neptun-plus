@@ -81,3 +81,16 @@ Kimenet: Sikeres hiányzás igazolása.
 | K7 | Felhasználói jogosultságok kezelése | Adminisztrátorok felhasználói jogosultságokat kezelhetnek |
 
 ## 11 Fogalomszótár
+Felhasználó: Az a személy, aki regisztrál a Neptun Plus rendszerbe és használja annak funkcionalitásait.
+
+Regisztráció: A felhasználói fiók létrehozása a Neptun Plus rendszerben, amely lehetővé teszi a felhasználó számára a belépést és a rendszer használatát.
+
+Bejelentkezés: A már regisztrált felhasználók számára elérhető funkció a Neptun Plus rendszerben, amely lehetővé teszi számukra a rendszerbe való belépést.
+
+Hiányzások rögzítése: A tanulók vagy oktatók által végrehajtott művelet a Neptun Plus rendszerben, amely lehetővé teszi számukra, hogy rögzítsék a hiányzásokat egy adott óráról.
+
+Hiányzások igazolása: Az oktatók által végrehajtott művelet a Neptun Plus rendszerben, amely lehetővé teszi számukra, hogy igazolják a tanulók hiányzásait.
+
+Jegyek kezelése: Az oktatók által végrehajtott művelet a Neptun Plus rendszerben, amely lehetővé teszi számukra, hogy érdemjegyeket adjanak és módosítsanak a tanulóknak.
+
+Jelenlétek nyilvántartása: Az oktatók által végrehajtott művelet a Neptun Plus rendszerben, amely lehetővé teszi számukra, hogy nyilvántartsák a tanulók jelenlétét az órákon.
