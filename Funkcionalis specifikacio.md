@@ -16,10 +16,15 @@ Egy könnyen kezelhető, modern webalkalmazás létrehozása a Neptun rendszer k
 - Jegyek kiadása és kezelése
 
 ## 5. Követelménylista
-
-| Id | Modul | Név | Leírás |
-| :---: | --- | --- | --- |
-| K1 | ...| ... | ... |
+| ID | Megnevezés | Leírás |
+| --- | --- | --- |
+| K1 | Felhasználói regisztráció | A hallgatók regisztrálni tudnak a rendszerbe. |
+| K2 | Képernyőtervek megjelenítése | A rendszer megjeleníti a felhasználói felület tervezett képernyőit. |
+| K3 | Bejelentkezés | Regisztrált felhasználók bejelentkezhetnek a rendszerbe. |
+| K4 | Jelszókezelés | A felhasználók jelszavukat meg tudják változtatni, illetve vissza tudják állítani elfelejtett jelszó esetén. |
+| K5 | Jegyek kezelése | Oktatók jegyeket tudnak adni és módosítani a hallgatóknak. |
+| K6 | Jelenlétek nyilvántartása | Oktatók nyilvántarthatják a hallgatók jelenlétét órákon. |
+| K7 | Felhasználói jogosultságok kezelése | Adminisztrátorok felhasználói jogosultságokat tudnak kezelni (pl. új felhasználó létrehozása, jogosultságok módosítása, felhasználó törlése). |
 
 ## 6. Használati esetek
 
