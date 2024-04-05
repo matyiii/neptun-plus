@@ -46,6 +46,29 @@ Egy könnyen kezelhető, modern webalkalmazás létrehozása a Neptun rendszer k
 ![képnév](gitlink ahol a kép van)
 
 ## 9. Forgatókönyvek
+Hiányzások rögzítése és igazolása:
+Hiányzások rögzítése:
+
+Szereplők: Tanuló, Oktató
+Előfeltételek: A tanulók és oktatók be vannak jelentkezve a rendszerbe.
+Folyamat (tanuló):
+A tanuló belép a profiljába.
+Megtekinti a hiányzásokat és választ egy órát, amelyen hiányzott.
+Rögzíti a hiányzást.
+Folyamat (oktató):
+Az oktató belép a profiljába.
+Megnyitja az óralistát és kijelöli az órát, amelyen hiányzás történt.
+Rögzíti a hiányzást.
+Kimenet: Sikeres hiányzás rögzítése.
+Hiányzások igazolása:
+
+Szereplők: Oktató
+Előfeltételek: Az oktató be van jelentkezve a rendszerbe.
+Folyamat:
+Az oktató belép a profiljába.
+Megtekinti a hiányzásokat és választ egy hiányzást, amelyet igazolni szeretne.
+Igazolja a hiányzást.
+Kimenet: Sikeres hiányzás igazolása.
 
 ## 10. Funkció - követelmény megfeleltetése
 
