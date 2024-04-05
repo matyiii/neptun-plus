@@ -16,6 +16,9 @@ A rendszer lehetőséget fog nyújtani a tanulók jelenlétének rögzítésére
 - Jegyek kiadása és kezelése
 
 ## 5. Igényelt üzleti folyamatok modellje
+- Hallgatók regisztrációja kurzusokra
+- Órarend készítése
+- Jegyek kiadása és kezelése
 
 ## 6. Követelménylista
 
