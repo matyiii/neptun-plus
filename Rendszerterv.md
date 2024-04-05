@@ -1,20 +1,28 @@
 ## 1. Rendszer célja
 
-- A cél egy olyan adminisztrációs rendszer létrehozása, mely számos funkciót biztosít mind az egyetemisták számára, mind az oktatóknak. A funkciók közé tartozik a hiányzások illetve jelenlétek nyomonkövetése, érdemjegyek rögzítése és átlagszámítás, és további adminisztratív feladatok.
+A rendszer célja egy olyan adminisztrációs és oktatási platform létrehozása, mely számos funkciót biztosít mind az egyetemisták számára, mind az oktatóknak és adminisztrátoroknak. A fő célok közé tartozik:
+
+- Hallgatói adminisztráció: Lehetővé teszi a hallgatók számára, hogy regisztráljanak kurzusokra, nyomon kövessék az órarendjüket és értékeléseiket, valamint hozzáférjenek az oktatói visszajelzésekhez.
+
+- Oktatási támogatás: Segíti az oktatókat az órák jelenléti nyilvántartásában, érdemjegyek rögzítésében és hallgatói teljesítményük értékelésében.
+
+- Adminisztratív feladatok kezelése: Adminisztrátoroknak lehetővé teszi a felhasználói fiókok és jogosultságok kezelését, valamint a rendszer konfigurációjának és beállításainak felügyeletét.
+
+Ezen célok megvalósítása révén a rendszer hozzájárul az oktatási folyamat hatékonyságának növeléséhez, a hallgatók és oktatók közötti kommunikáció javításához, valamint az adminisztratív teher csökkentéséhez az egyetemi közösség számára.
 
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
 
-- Scrum master: A Scrum folyamat megvalósításáért felelős, biztosítja a csapat hatékony működését.
-- Product owner: Az ügyfél vagy ügyfél képviselőjeként a termékért felelős, a csapatnak irányt mutat az ő elképzelései vagy elvárásai felé.
-- Üzleti szereplő: Az üzleti igényeket képviseli, biztosítja az üzleti célkitűzések megvalósítását.
+- Scrum master: A Scrum folyamat megvalósításáért felelős, biztosítja a csapat hatékony működését.| Mezőfi Máté
+- Product owner: Az ügyfél vagy ügyfél képviselőjeként a termékért felelős, a csapatnak irányt mutat az ő elképzelései vagy elvárásai felé. | Bagoly Gábor
+- Üzleti szereplő: Az üzleti igényeket képviseli, biztosítja az üzleti célkitűzések megvalósítását. | Barna Péter
 
 ### 2.2 Projektmunkások és felelőségek:
 
-- Frontend: A felhasználói felület fejlesztéséért és karbantartásáért felelős.
-- Backend: A szerveroldali logika és adatkezelés fejlesztéséért és karbantartásáért felelős.
-- Tesztelés: A rendszer teszteléséért és hibajavításért felelős.
+- Frontend: A felhasználói felület fejlesztéséért és karbantartásáért felelős. | Nagy Tamás, Apjok Alex
+- Backend: A szerveroldali logika és adatkezelés fejlesztéséért és karbantartásáért felelős. | Mezőfi Máté
+- Tesztelés: A rendszer teszteléséért és hibajavításért felelős. | Barna Péter
 
 ### 2.3 Ütemterv:
 
@@ -30,7 +38,13 @@
 
 ### 2.4 Mérföldkövek:
 
-- Prototípus átadása: 2024.04.06.
+- Prototípus átadása: A prototípus teljes körű funkcióinak átadása és bemutatása a megrendelőnek és érintett feleknek a visszajelzések és további fejlesztési igények gyűjtése érdekében. (2024.04.06.)
+
+- Fő funkciók elkészítése: A rendszer alapvető funkcióinak, mint például a felhasználói regisztráció, bejelentkezés, órarend készítés, jegyek rögzítése és kezelése, teljes körű kifejlesztése és működésre kész állapotba hozása. (Kalkuláció...)
+
+- Tesztelés és hibajavítás: A teljes rendszer alapos tesztelése különböző környezetekben és felhasználói esetekben, valamint a felfedezett hibák javítása és a stabilitás biztosítása. (Kalkuláció...)
+
+- Bemutatás és átadás: A kész rendszer bemutatása és átadása a megrendelőnek és érintett feleknek, valamint a dokumentáció teljes körű elkészítése és átadása. (Kalkuláció...)
 
 ## 3. Üzleti folyamatok modellje
 
@@ -54,12 +68,23 @@
 | --- | --- | --- |
 | K1 | Felhasználói regisztráció | A hallgatók regisztrálni tudnak a rendszerbe. |
 | K2 | Képernyőtervek megjelenítése | A rendszer megjeleníti a felhasználói felület tervezett képernyőit. |
+| K3 | Bejelentkezés | Regisztrált felhasználók bejelentkezhetnek a rendszerbe. |
+| K4 | Jelszókezelés | A felhasználók jelszavukat meg tudják változtatni, illetve vissza tudják állítani elfelejtett jelszó esetén. |
+| K5 | Jegyek kezelése | Oktatók jegyeket tudnak adni és módosítani a hallgatóknak. |
+| K6 | Jelenlétek nyilvántartása | Oktatók nyilvántarthatják a hallgatók jelenlétét órákon. |
+| K7 | Felhasználói jogosultságok kezelése | Adminisztrátorok felhasználói jogosultságokat tudnak kezelni (pl. új felhasználó létrehozása, jogosultságok módosítása, felhasználó törlése). |
 
 ### Nemfunkcionális követelmények
 
 | ID | Megnevezés | Leírás |
 | --- | --- | --- |
-| K4 | Teljesítmény | A rendszernek gyorsan kell válaszolnia még nagy terhelés mellett is. |
+| K8 | Teljesítmény | A rendszernek gyorsan kell válaszolnia még nagy terhelés mellett is. |
+| K9 | Felhasználóbarát felület | Az alkalmazásnak egy intuitív, könnyen kezelhető felhasználói felülettel kell rendelkeznie. |
+| K10 | Letisztult design | Az alkalmazásnak szép és letisztult designnal kell rendelkeznie, amely könnyen értelmezhető és esztétikus. |
+| K11 | Megbízhatóság | Az alkalmazásnak stabilnak és megbízhatónak kell lennie, minimálisra csökkentve a leállások és hibák előfordulását. |
+| K12 | Teljesítmény | Az alkalmazásnak gyorsan kell működnie, a felhasználók számára gyors válaszidővel. |
+| K13 | Skálázhatóság | Az alkalmazásnak képesnek kell lennie a könnyű horizontális és vertikális skálázhatóságra, hogy növekedés esetén is hatékonyan működjön. |
+| K14 | Biztonság | Az alkalmazásnak biztonságosnak kell lennie, megfelelő adatvédelmi intézkedésekkel, például jelszóvédelemmel és hitelesítési mechanizmusokkal. | 
 
 ### Támogatott eszközök
 
@@ -109,7 +134,7 @@ A felhasználók számára különböző menüpontok állnak rendelkezésre a re
 - Verziókezelő rendszer: Github
 - Tesztelő eszközök: Cypress
 
-## 8. Architekturális terv
+## 7. Architekturális terv
 
 ### Webszerver
 
@@ -117,13 +142,13 @@ A rendszer a Model-View-Controller (MVC) tervezési mintát követi, ahol a mode
 
 ### Adatbázis rendszer
 
-Az adatok tárolására a MySQL adatbázis rendszert használjuk. Az adatbázis séma relációs adatmodellt követ, amelyben az entitások közötti kapcsolatokat kulcsok segítségével valósítjuk meg.
+Az adatok tárolására a MySQL adatbázis rendszert használjuk alapértelmezetten. Az adatbázis séma relációs adatmodellt követ, amelyben az entitások közötti kapcsolatokat kulcsok segítségével valósítjuk meg. A rendszer lehetőséget biztosít másik adatbázisrendszerek, mint például PostgreSQL vagy SQLite, használatára is, mivel a keretrendszer támogatja ezeket a lehetőségeket.
 
 ### A program elérése, kezelése
 
 A felhasználók a webes alkalmazáson keresztül érhetik el a rendszert, amely elérhető lesz asztali és mobil webböngészőkben. Az adminisztrátorok speciális jogosultságokkal rendelkeznek a rendszer kezeléséhez.
 
-### 9. Adatbázis terv
+### 8. Adatbázis terv
 
 Az adatbázis terv a rendszer által tárolt adatok struktúráját írja le, beleértve az adattáblák struktúráját, azok közötti kapcsolatokat és az attribútumokat. Például:
 
@@ -173,22 +198,22 @@ Az adatbázis terv a rendszer által tárolt adatok struktúráját írja le, be
    - course_id: INTEGER (idegen kulcs, hivatkozik a courses tábla id oszlopára)
    - grade: INTEGER (jegy értéke)
 
-### 10. Implementációs terv
+### 9. Implementációs terv
 
 Az implementációs terv részletezi a fejlesztési folyamatot, beleértve a programozási nyelveket, keretrendszereket és egyéb eszközöket, amelyeket a fejlesztőcsapat használni fog. Például:
 
 - **Frontend fejlesztés:**
   - Programozási nyelv: HTML, CSS, Bootstrap
-  - Keretrendszer: Laravell
+  - Keretrendszer: Laravel
   - Fejlesztőeszköz: Visual Studio Code
 
 - **Backend fejlesztés:**
   - Programozási nyelv: PHP
-  - Webes keretrendszer: Laravell
+  - Webes keretrendszer: Laravel
   - Adatbázis: MySQL
   - Fejlesztőeszköz: Visual Studio Code
 
-### 11. Tesztterv
+### 10. Tesztterv
 
 #### Tesztelési célok
 
@@ -200,29 +225,76 @@ A tesztelés célja a rendszer funkcionalitásának, teljesítményének és biz
 - Funkcionális tesztelés: A rendszer különböző funkcióinak tesztelése, hogy ellenőrizzük, hogy megfelelnek-e a követelményeknek.
 - Teljesítménytesztelés: A rendszer teljesítményének mérése különböző terhelési szinteken.
 - Biztonsági tesztelés: A rendszer biztonságának ellenőrzése különböző tesztekkel, például penetrációs tesztekkel.
+- Automatizált felületesztelés: Az alkalmazás felhasználói felületének automatizált tesztelése, például Cypress vagy Selenium segítségével.
 
 #### Tesztesetek
 
 A tesztterv részeként létrehozott tesztesetek részletesen leírják a tesztelendő szcenáriókat, az elvárt eredményeket és a tesztvégrehajtás lépéseit.
 
-### 12. Telepítési terv
+### 11. Telepítési terv
 
 A telepítési terv részletezi a rendszer telepítésének folyamatát a különböző környezetekben. Például:
 
-**Fizikai telepítési terv:**
-- A rendszer telepítése a szerverekre vagy felhőalapú infrastruktúrára.
-- A szükséges szoftverek és függőségek telepítése.
+#### Fizikai telepítési terv:
 
-**Szoftver telepítési terv:**
-- Az alkalmazás elérhetősége és telepítése az ügyfelek számára.
-- Az alkalmazás frissítési folyamata és verziókezelése.
+1. A rendszer telepítése a szerverekre vagy felhőalapú infrastruktúrára:
+   - A szükséges hardveres követelmények ellenőrzése és biztosítása.
+   - Telepítési médium előkészítése és telepítési folyamat indítása.
+   - Rendszerkonfiguráció beállítása és inicializálása.
 
-### 13. Karbantartási terv
+2. A szükséges szoftverek és függőségek telepítése:
+   - Operációs rendszer frissítése és konfigurálása.
+   - Szükséges szoftverek (pl. adatbázis szerver, webkiszolgáló) telepítése és konfigurálása.
+   - Függőségek feloldása és szükséges konfigurációk végrehajtása.
 
-Fontos ellenőrizni:
+#### Szoftver telepítési terv:
 
-- Rendszeres biztonsági mentések készítése az adatokról.
-- Rendszerfrissítések telepítése és karbantartása.
+1. Az alkalmazás elérhetősége és telepítése az ügyfelek számára:
+   - Telepítési folyamat dokumentálása és publikálása.
+   - Telepítési csomag előkészítése és letöltési lehetőségek biztosítása.
+   - Telepítési utasítások megadása és felhasználói dokumentáció elkészítése.
 
+2. Az alkalmazás frissítési folyamata és verziókezelése:
+   - Verziókövetés és verziókezelési rendszer beállítása.
+   - Frissítési folyamat dokumentálása és kommunikáció a felhasználók felé.
+   - Frissítési csomagok elkészítése és tesztelése.
+
+#### Telepítési folyamat:
+
+1. A telepítési csomag letöltése a hivatalos forrásból.
+2. A telepítési folyamat elindítása és az alkalmazás telepítésének kezdeti lépései végrehajtása.
+3. A telepítőprogram által kérdezett konfigurációs beállítások megadása és elfogadása.
+4. A telepítési folyamat végére érés és a rendszer inicializálása.
+5. A telepítés sikeres befejezése és az alkalmazás elérhetővé válása a felhasználók számára.
+
+### 12. Karbantartási terv
+
+A karbantartási terv célja a rendszer hosszú távú működésének biztosítása és annak megfelelő állapotban tartása. A következő tevékenységeket tartalmazza:
+
+1. Rendszeres biztonsági mentékek készítése az adatokról:
+   - Automatizált mentési folyamat beállítása az adatbázisról és a rendszer konfigurációs állományairól.
+   - Rendszeres időközönkénti biztonsági mentések készítése és tárolása.
+   - Mentési folyamatok rendszeres ellenőrzése és tesztelése a helyes működés érdekében.
+
+2. Rendszerfrissítések telepítése és karbantartása:
+   - Rendszerkomponensek és függőségek frissítésének monitorozása és tervezése.
+   - Rendszeres frissítések telepítése biztonsági hibák, teljesítményproblémák vagy új funkciók bevezetése céljából.
+   - Frissítési folyamatok dokumentálása és nyomon követése.
+
+3. Felhasználói visszajelzések gyűjtése és figyelembevétele a továbbfejlesztés során:
+   - Felhasználói visszajelzési csatornák biztosítása, például felhasználói támogatási rendszer vagy visszajelzési űrlap.
+   - Beérkező visszajelzések rendszeres monitorozása és értékelése.
+   - Fontos felhasználói igények és javaslatok beépítése a rendszer fejlesztési tervébe és prioritásokba.
+
+4. Teljesítményfigyelés és optimalizálás:
+   - Rendszeres teljesítménymérés és monitorozás a teljesítményproblémák azonosítása érdekében.
+   - Teljesítményproblémák kezelése, például adatbázis-indexek létrehozása, lekérdezésoptimalizálás vagy infrastruktúra skálázása.
+
+5. Hiba- és problémajavítás:
+   - Bejelentett hibák és problémák nyomon követése és dokumentálása.
+   - Hiba- és problémajavítási folyamat beállítása és végrehajtása, beleértve a hibajegyek kezelését és tesztelését.
+   - Sürgős hibák azonnali kezelése, ideiglenes megoldások biztosítása és hosszú távú javítások tervezése.
+
+A karbantartási terv folyamatosan frissül és adaptálódik a rendszer működése során felmerülő új igények és kihívások alapján.
 
 
