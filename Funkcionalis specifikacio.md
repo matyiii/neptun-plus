@@ -34,6 +34,12 @@ Egy könnyen kezelhető, modern webalkalmazás létrehozása a Neptun rendszer k
 - Tanegységek rögzítése és kezelése
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
+| Használati eset |	Követelmény |
+| Felhasználó regisztrációja és bejelentkezése | K1, K3 |
+| Hiányzások rögzítése és igazolása	| K6 |
+| Érdemjegyek rögzítése	| K5 |
+| Tanulmányi átlagok kiszámítása | - |
+| Tanegységek rögzítése és kezelése	| - |
 
 ## 8. Képernyőtervek
 
