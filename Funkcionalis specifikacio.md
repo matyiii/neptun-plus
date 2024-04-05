@@ -11,6 +11,9 @@ Egy könnyen kezelhető, modern webalkalmazás létrehozása a Neptun rendszer k
 - Jegyek kiadása és kezelése
 
 ## 4. Igényelt üzleti folyamatok modellje
+- Hallgatók regisztrációja kurzusokra
+- Órarend készítése
+- Jegyek kiadása és kezelése
 
 ## 5. Követelménylista
 
