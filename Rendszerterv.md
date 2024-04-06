@@ -159,6 +159,7 @@ Az adatbázis terv a rendszer által tárolt adatok struktúráját írja le, be
    - password: VARCHAR (hashelt jelszó)
    - email: VARCHAR (egyedi)
    - created_at: TIMESTAMP
+   - updated_at: TIMESTAMP
 
 2. **roles:**
    - id: INTEGER (elsődleges kulcs)
@@ -166,24 +167,30 @@ Az adatbázis terv a rendszer által tárolt adatok struktúráját írja le, be
 
 3. **subjects:**
    - id: INTEGER (elsődleges kulcs)
-   - name: VARCHAR (egyedi, tantárgy neve)
+   - name: VARCHAR (tantárgy neve)
    - code: VARCHAR (egyedi, tantárgy kódja)
+   - type: VARCHAR (előadás vagy gyakorlat)
+   - created_at: TIMESTAMP
+   - updated_at: TIMESTAMP
 
 4. **courses:**
    - id: INTEGER (elsődleges kulcs)
    - subject_id: INTEGER (idegen kulcs, hivatkozik a subjects tábla id oszlopára)
    - code: VARCHAR (kurzuskód, pl. "A", "B", stb.)
-   - type: ENUM (ea vagy gy, azaz előadás vagy gyakorlat)
+   - created_at: TIMESTAMP
+   - updated_at: TIMESTAMP
 
 5. **user_courses:**
    - id: INTEGER (elsődleges kulcs)
    - user_id: INTEGER (idegen kulcs, hivatkozik a users tábla id oszlopára)
    - course_id: INTEGER (idegen kulcs, hivatkozik a courses tábla id oszlopára)
 
-6. **classes:**
+6. **course_classes:**
    - id: INTEGER (elsődleges kulcs)
    - course_id: INTEGER (idegen kulcs, hivatkozik a courses tábla id oszlopára)
-   - date: TIMESTAMP (óra dátuma)
+   - class_date: TIMESTAMP (óra dátuma)
+   - created_at: TIMESTAMP
+   - updated_at: TIMESTAMP
 
 7. **attendances:**
    - id: INTEGER (elsődleges kulcs)
@@ -191,12 +198,16 @@ Az adatbázis terv a rendszer által tárolt adatok struktúráját írja le, be
    - class_id: INTEGER (idegen kulcs, hivatkozik a classes tábla id oszlopára)
    - present: BOOLEAN (jelenlét, jelen volt vagy sem)
    - excuse_submitted: BOOLEAN (igazolás leadva vagy sem)
+   - created_at: TIMESTAMP
+   - updated_at: TIMESTAMP
 
 8. **grades:**
    - id: INTEGER (elsődleges kulcs)
    - user_id: INTEGER (idegen kulcs, hivatkozik a users tábla id oszlopára)
    - course_id: INTEGER (idegen kulcs, hivatkozik a courses tábla id oszlopára)
    - grade: INTEGER (jegy értéke)
+   - created_at: TIMESTAMP
+   - updated_at: TIMESTAMP
 
 ### 9. Implementációs terv
 
