@@ -42,7 +42,14 @@ Egy könnyen kezelhető, modern webalkalmazás létrehozása a Neptun rendszer k
 | Tanegységek rögzítése és kezelése	| - |
 
 ## 8. Képernyőtervek
-![képnév](gitlink ahol a kép van)
+Regisztráció
+![Register](/kepernyo_tervek/register.png "Register")
+Bejelentkezés
+![Login](/kepernyo_tervek/login.png "Login")
+Navigációs menü
+![Navigation Menu](/kepernyo_tervek/navigation_menu.png "Navigation Menu")
+Kurzusok oldal
+![Courses page](/kepernyo_tervek/courses_page.png "Courses page")
 
 ## 9. Forgatókönyvek
 Hiányzások rögzítése és igazolása:
