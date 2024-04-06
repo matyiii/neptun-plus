@@ -56,3 +56,20 @@ Név: Tanulmányi átlagok megtekintése
 Leírás: A tanulmányi átlag megtekintésére ad lehetőséget
 
 ## 7. Fogalomtár
+Authentikáció: Jogosultság ellenőrzés a rendszerhez való hozzáféréshez.
+
+Regisztráció: A felhasználói fiók létrehozása (neptun kód, email, jelszó) alapján.
+
+Bejelentkezés: A már regisztrált felhasználó beléphet a rendszerbe (neptun kód és jelszó).
+
+Diák: Regisztrált felhasználó akinek a jogosultsága diákra lett állítva.
+
+Oktató: Regisztrált felhasználó akinek a jogosultsága oktatóra lett állítva.
+
+Hiányzások rögzítése: A tanuló vagy oktató rögzíti a hiányzást egy adott óráról.
+
+Hiányzások igazolása: Az oktató  igazolja a tanuló hiányzásait.
+
+Jegy: Adott órához tartozó adott diáknak az értékelései, oktató által kerül rögzítésre.
+
+Jelenlét nyilvántartás: Adott tárgy adott óráin mely diákok vettek illetve nem vettek részt, oktató rögzíti.
