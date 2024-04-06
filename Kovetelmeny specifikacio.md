@@ -73,3 +73,9 @@ Hiányzások igazolása: Az oktató  igazolja a tanuló hiányzásait.
 Jegy: Adott órához tartozó adott diáknak az értékelései, oktató által kerül rögzítésre.
 
 Jelenlét nyilvántartás: Adott tárgy adott óráin mely diákok vettek illetve nem vettek részt, oktató rögzíti.
+
+SQL: Adatbázisok kezelésére és lekérdezésére szolgál. Segítségével lehet adatokat beilleszteni, módosítani, lekérdezni és törölni.
+
+PHP: Szerveroldali programozási nyelv, amelyet általában webes alkalmazások fejlesztésére használnak. PHP segítségével dinamikus webalkalmazásokat lehet készíteni, amelyek interaktívak és az adatbázisokkal is kommunikálhatnak.
+
+Laravel: A Laravel egy nyílt forráskódú, PHP alapú webes alkalmazás-keretrendszer. Számos kényelmes funkciót és eszközt kínál, amelyek megkönnyítik a fejlesztők számára az új funkciók hozzáadását, az adatbázis-kezelést, a felhasználókezelést, a hibakezelést
