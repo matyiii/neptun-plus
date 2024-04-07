@@ -1,59 +1,51 @@
 # Követelmény specifikáció
 
 ## 1. Áttekintés
-A projekt célja egy olyan rendszer megvalósítása, amely az adminisztrációs folyamatokat modernizálja. Funkciói jelenlét és hiányzás követés, érdemjegyek vezetése és tanulmányi átlagok automatikus kalkulációja.
+A projekt célja egy olyan iskolai rendszer megvalósítása, amely az adminisztrációs folyamatokat modernizálja. Funkciói jelenlét és hiányzás követés, érdemjegyek vezetése és tanulmányi átlagok automatikus kalkulációja.
 
 ## 2. A jelenlegi helyzet leírása
-Jelenleg a jelenlét, hiányzás és érdemjegyek vezetése papír alapon történik, amely az intézmény részéről már nem tekinthető modern és elfogadott megoldásnak. Az intézmény elköteleződött a papírmentes jövő mellett, így minden papír alapon történő adatkezelést a digitális megoldásokra szeretné lecserélni.
+Az iskola adminisztrációs folyamatai még papír alapon történnek, amely az intézmény részéről már nem tekinthető modern és elfogadott megoldásnak. Az intézmény elköteleződött a papírmentes jövő mellett, így minden papír alapon történő adatkezelést digitális megoldásokra szeretné lecserélni.
 
 ## 3. Vágyálomrendszer
 Egyszerű, könnyen kezelhető weboldal létrehozása, amely a jelenlegi papír alapú adminisztrációs folyamatot fogja leváltani. A felületet csak regisztrált személyek érhetik el.
-A rendszer lehetőséget fog nyújtani a tanulók jelenlétének rögzítésére és hiányzások követésére is. Hiányzás esetén igazolások leadására szintén lehetőség lesz. Fontos funkció lesz még az érdemjegyek regisztrációja és a tanulmányi átlagok automatikus kalkulációja. Ebből következik, hogy tanegységek rögzítésére is alkalmas lesz a kész produktum.
+A rendszer lehetőséget fog nyújtani a tanulók jelenlétének rögzítésére és hiányzások követésére is. Hiányzás esetén igazolások leadására szintén lehetőség lesz. Fontos funkció lesz még az érdemjegyek rögzítése és a tanulmányi átlagok automatikus kalkulációja. Ebből következik, hogy tanegységek rögzítésére is alkalmas lesz a kész produktum.
 
 ## 4. Jelenlegi üzleti folyamatok modellje
-- Hallgatók regisztrációja kurzusokra
-- Órarend készítése
-- Jegyek kiadása és kezelése
+Az intézmény a következő folyamatait szeretné lecserélni:
+- Hallgatói regisztráció
+- Kurzus regisztráció és órarend készítés
+- Érdemjey rögzítés
+- Jelenlétkövetés
+- Hiányzások igazolásának tárolása
+
+Ezek a folyamatok még papír alapon működnek. Már elavultnak számítanak és az intézménynek sok idejébe és energiájába telik, hogy ezeket megfelelően és kezeljék.
 
 ## 5. Igényelt üzleti folyamatok modellje
-- Hallgatók regisztrációja kurzusokra
-- Órarend készítése
-- Jegyek kiadása és kezelése
+
+A 4. pontban már feltűntetet üzleti folyamatok maradnak, viszont ezeket digitális alapon működő megoldásra szeretné lecserélni.
+
+Üzleti folyamatok:
+- Hallgatói regisztráció
+- Kurzus regisztráció és órarend készítés
+- Érdemjey rögzítés
+- Jelenlétkövetés
+- Hiányzások igazolásának tárolása
+
+Bejelentkezés után a felhasználó jogosultság alapján lesz képes elérni a különböző funkciókat, amelyre jogosult.
+
 
 ## 6. Követelménylista
-ID: K1  
-Modul: Jogosultság  
-Név: Bejelentkezési felület Leírás: E-mail és jelszó segítségével a felhasználó bejelentkezik
 
-ID: K2
-Modul: Jogosultság
-Név: Jogosultsági szintek
-Leírás: Admin: Felhasználók kezelése (létrehozás, törlés, jogosultságok módosítása)Rendszerbeállítások kezelése; Oktató: Érdemjegyek vezetése és jelenlétek vezetése; Jegyek és jelenléti riport megtekintése
-
-ID: K3
-Modul: Oktatói adminisztráció
-Név: Érdemjegy rögzítés
-Leírás: Az oktatók a diákokhoz tudnak rögzíteni érdemjegyeket
-
-ID: K4
-Modul: Oktatói adminisztráció
-Név: Hiányzás rögzítés
-Leírás: Az oktatók a diákokhoz tudnak rögzíteni jelenléti státuszt
-
-ID: K5
-Modul: Oktatói adminisztráció
-Név: Hiányzás rögzítés
-Leírás: Az oktatók a diákokhoz tudnak rögzíteni jelenléti státuszt
-
-ID: K6
-Modul: Hallgatói adminisztráció
-Név: Igazolás leadás
-Leírás: A hallgatók igazolást tudnak leadni
-
-ID: K7
-Modul: Riport
-Név: Tanulmányi átlagok megtekintése
-Leírás: A tanulmányi átlag megtekintésére ad lehetőséget
+| **ID** |        **Modul**        |               **Név**               |                                                                                                 **Leírás**                                                                                                |
+|:------:|:-----------------------:|:-----------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| K1     | Regisztráció            | Regisztrációs felület               | A felhasználó e-mail és jelszó segítségével tud regisztrálni a rendszerbe                                                                                                                                 |
+| K2     | Bejelentkezés           | Bejelentkezési felület              | A regisztrált felhasználó e-mail cím és jelszó segítségével tud bejelentkezni                                                                                                                             |
+| K3     | Jogosultság             | Jogosultsági szintek                | Adminisztrátorok: - Felhasználók kezelése (létrehozás, törlés, módosítás)  Oktatók: - Érdemjegyek rögzítése - Jelenlét rögzítés  Hallgatók: - Jegyek, jelenléti riportok megtekintése                     |
+| K4     | Rendszer adminisztráció | Felhasználók kezelése               | Admin jogosultsággal rendelkező felhasználók a következő funkciókat tudját megvalósítani: -Új felhasználók rögzítése -A már meglévő felhasználók adatainak módosítása -Meglévő felhasználó törlése        |
+| K5     | Oktató                  | Érdemjegy rögzítés                  | Az oktatók képesek lesznek a tanulók érdemjegyeit rögzíteni a rendszerben. Érdemjegyek a következő értékek lehetnek: 1; 2; 3; 4; 5                                                                        |
+| K6     | Oktató                  | Jelenlét rögzítés                   | Az oktatók a tanulók jelenléti státuszait fogják tudni rögzíteni.  Jelenléti státusz értékei: -Jelen volt: (Ha a tanuló az adott órán részt vett.) -Hiányzott: (Ha a tanuló nem vett részt az adott órán) |
+| K7     | Hallgató                | Igazolás leadás                     | A hallgató igazolást fog tudni leadni azokra az órákra, amelyeken nem vett részt.                                                                                                                         |
+| K8     | Riport                  | Érdemjegyek és átlagok megtekintése | Az érdemjegyeket és tanulmányi átlagokat tudja megtekinteni a felhasználó.                                                                                                                                |
 
 ## 7. Fogalomtár
 Authentikáció: Jogosultság ellenőrzés a rendszerhez való hozzáféréshez.
