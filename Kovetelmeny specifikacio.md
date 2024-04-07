@@ -58,11 +58,13 @@ Diák: Regisztrált felhasználó akinek a jogosultsága diákra lett állítva.
 
 Oktató: Regisztrált felhasználó akinek a jogosultsága oktatóra lett állítva.
 
+Admin: Regisztrált felhasználó, akinek a jogosultsága adminra lett álltíva. Ezzel a jogosultsággal az összes funkciót eléri és módisításokat tud eszközölni.
+
 Hiányzások rögzítése: A tanuló vagy oktató rögzíti a hiányzást egy adott óráról.
 
 Hiányzások igazolása: Az oktató  igazolja a tanuló hiányzásait.
 
-Jegy: Adott órához tartozó adott diáknak az értékelései, oktató által kerül rögzítésre.
+Érdemjegy: Adott órához tartozó adott diáknak az értékelései, oktató által kerül rögzítésre.
 
 Jelenlét nyilvántartás: Adott tárgy adott óráin mely diákok vettek illetve nem vettek részt, oktató rögzíti.
 
