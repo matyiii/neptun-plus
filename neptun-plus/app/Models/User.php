@@ -55,4 +55,11 @@ class User extends Authenticatable
 			$query->where('id', 2);
 		})->get();
 	}
+
+	public static function getStudentByCourseId($courseId)
+	{
+		return self::whereHas('courses', function ($query) use ($courseId) {
+			$query->where('courses.id', $courseId);
+		})->get();
+	}
 }

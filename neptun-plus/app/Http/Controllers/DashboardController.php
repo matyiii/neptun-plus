@@ -9,7 +9,7 @@ class DashboardController extends Controller
 {
 	public function dashboard()
 	{
-		$user = Auth::user()->load('role');
+		$user = Auth::user()->load(['role', 'grades', 'courses', 'attendances']);
 
 		$additionalData = [
 			'user' => $user,
