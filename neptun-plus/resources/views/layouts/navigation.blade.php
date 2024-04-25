@@ -18,6 +18,9 @@
 					<x-nav-link :href="route('courses')" :active="request()->routeIs('courses')">
 						Kurzusok
 					</x-nav-link>
+					<x-nav-link :href="route('attendance.management')" :active="request()->routeIs('attendance.management')">
+						Jelenlét vezetés
+					</x-nav-link>
                 </div>
             </div>
 

@@ -14,6 +14,20 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+	<style>
+		td button {
+			background-color: #3490dc;
+			color: #fff;
+			padding: 0.5rem 1rem;
+			border: none;
+			border-radius: 0.25rem;
+			cursor: pointer;
+		}
+	
+		td button:hover {
+			background-color: #2779bd;
+		}
+	</style>
 </head>
 
 <body class="font-sans antialiased asd">
