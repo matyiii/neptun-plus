@@ -18,4 +18,15 @@ class UserController extends Controller
 
 		return view('courses')->with($additionalData);
 	}
+
+	public function listClasses()
+	{
+		$user = Auth::user()->load(['role', 'courses', 'courses.classes', 'courses.subject', 'courses.users', 'attendances']);
+
+		$additionalData = [
+			'courses' => $user->courses
+		];
+
+		return view('attendance.management')->with($additionalData);
+	}
 }

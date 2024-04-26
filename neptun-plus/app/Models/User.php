@@ -55,4 +55,39 @@ class User extends Authenticatable
 			$query->where('id', 2);
 		})->get();
 	}
+
+	public static function getStudentByCourseId($courseId)
+	{
+		return self::with(['attendances'])
+			->whereHas('courses', function ($query) use ($courseId) {
+				$query->where('courses.id', $courseId);
+			})->get();
+	}
+
+	public static function getStudentByClassId($classId)
+	{
+		return self::with(['attendances'])
+			->whereHas('courses', function ($query) use ($classId) {
+				$query->whereHas('classes', function ($query) use ($classId) {
+					$query->where('id', $classId);
+				});
+			})
+			->whereHas('role', function ($query) {
+				$query->where('id', 2);
+			})->get();
+	}
+
+	public static function getTeachers()
+	{
+		return self::whereHas('role', function ($query) {
+			$query->where('id', 1);
+		})->get();
+	}
+
+	public function hasRole($role)
+	{
+		$roleId = $role === 'teacher' ? 1 : 2;
+
+		return $this->role->id === $roleId;
+	}
 }

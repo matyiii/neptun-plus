@@ -14,12 +14,18 @@ class UserCoursesSeeder extends Seeder
 	 */
 	public function run(): void
 	{
-		$users = User::getStudents();
+		$students = User::getStudents();
+		$teachers = User::getTeachers();
 		$courses = Course::all();
 
-		foreach ($users as $user) {
+		foreach ($students as $student) {
 			$randomCourses = $courses->random(rand(1, 3));
-			$user->courses()->attach($randomCourses);
+			$student->courses()->attach($randomCourses);
+		}
+
+		foreach ($teachers as $teacher) {
+			$randomCourses = $courses->random(rand(4, 6));
+			$teacher->courses()->attach($randomCourses);
 		}
 	}
 }

@@ -1,17 +1,4 @@
-<style>
-    td button {
-        background-color: #3490dc;
-        color: #fff;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 0.25rem;
-        cursor: pointer;
-    }
 
-    td button:hover {
-        background-color: #2779bd;
-    }
-</style>
 
 <x-app-layout>
     <div class="py-12">

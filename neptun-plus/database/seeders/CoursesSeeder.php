@@ -21,6 +21,9 @@ class CoursesSeeder extends Seeder
             ['subject_code' => 'LBT_IM717G2', 'code' => 'B'],
             ['subject_code' => 'LBT_IM717G2', 'code' => 'C'],
             ['subject_code' => 'LBT_IM716K3', 'code' => 'A'],
+            ['subject_code' => 'LBT_IM742M1', 'code' => 'A'],
+            ['subject_code' => 'LBT_IM742P2', 'code' => 'A'],
+            ['subject_code' => 'LBT_IM742P2', 'code' => 'B'],
         ];
 
         foreach ($courses as $course) {

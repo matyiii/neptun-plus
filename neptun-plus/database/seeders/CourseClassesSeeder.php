@@ -23,7 +23,7 @@ class CourseClassesSeeder extends Seeder
             for ($i = 1; $i <= 2; $i++) {
                 CourseClass::create([
                     'course_id' => $course->id,
-                    'class_date' => $startDate,
+                    'class_date' => $startDate->clone()->format('Y-m-d H:00:00'),
                 ]);
 
                 $startDate = $endDate->addDay();
