@@ -7,25 +7,40 @@ use Illuminate\Database\Eloquent\Model;
 
 class Attendance extends Model
 {
-    use HasFactory;
+	use HasFactory;
 
-    protected $connection = 'mysql';
-    protected $table = 'attendances';
+	protected $connection = 'mysql';
+	protected $table = 'attendances';
 
-    protected $fillable = [
-        'user_id',
-        'class_id',
-        'present',
-        'excuse_submitted'
-    ];
+	protected $fillable = [
+		'user_id',
+		'class_id',
+		'present',
+		'excuse_submitted'
+	];
 
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+	public function user()
+	{
+		return $this->belongsTo(User::class);
+	}
 
-    public function class()
-    {
-        return $this->belongsTo(CourseClass::class);
-    }
+	public function class()
+	{
+		return $this->belongsTo(CourseClass::class);
+	}
+
+	public static function updateAttendances($classId, $students)
+	{
+		foreach ($students as $userId => $present) {
+			self::updateOrCreate(
+				[
+					'user_id' => $userId,
+					'class_id' => $classId,
+				],
+				[
+					'present' => $present,
+				]
+			);
+		}
+	}
 }

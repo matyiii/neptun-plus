@@ -20,7 +20,6 @@
                                 @foreach ($courses as $course)
                                     @foreach ($course->classes as $class)
                                         <tr>
-                                            {{-- @dd($course, $class) --}}
                                             <td class="px-6 py-4">
                                                 <div class="text-sm text-gray-900">{{ $course->subject->name }} -
                                                     {{ $course->subject->type }}.</div>
@@ -35,11 +34,12 @@
                                                 <div class="text-sm text-gray-900">{{ $class->class_date }}</div>
                                             </td>
                                             <td class="px-6 py-4">
-                                                <div class="text-sm text-gray-900">{{ count($course->users) }}</div>
+                                                <div class="text-sm text-gray-900">
+                                                    {{ $course->users->where('role_id', 2)->count() }}</div>
                                             </td>
                                             <td class="px-6 py-4">
                                                 <button
-                                                    onclick="window.location='{{ route('attendance.form', ['course_id' => $course->id]) }}'">
+                                                    onclick="window.location='{{ route('attendance.form', ['class_id' => $class->id]) }}'">
                                                     Jelenlét rögzítés
                                                 </button>
                                             </td>
