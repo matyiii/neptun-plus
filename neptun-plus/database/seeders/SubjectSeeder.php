@@ -29,6 +29,16 @@ class SubjectSeeder extends Seeder
                 'code' => 'LBT_IM716K3',
                 'type' => 'ea',
             ],
+			[
+                'name' => 'Robotika',
+                'code' => 'LBT_IM742M1',
+                'type' => 'ea',
+            ],
+			[
+                'name' => 'Robotika',
+                'code' => 'LBT_IM742P2',
+                'type' => 'gy',
+            ],
         ];
 
         foreach ($subjects as $subject) {
