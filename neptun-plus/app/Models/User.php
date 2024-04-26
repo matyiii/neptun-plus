@@ -83,4 +83,11 @@ class User extends Authenticatable
 			$query->where('id', 1);
 		})->get();
 	}
+
+	public function hasRole($role)
+	{
+		$roleId = $role === 'teacher' ? 1 : 2;
+
+		return $this->role->id === $roleId;
+	}
 }
