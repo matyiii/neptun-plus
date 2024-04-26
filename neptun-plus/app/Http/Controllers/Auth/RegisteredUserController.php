@@ -38,7 +38,7 @@ class RegisteredUserController extends Controller
         $user = User::create([
             'neptun_code' => $request->neptun_code,
             'email' => $request->email,
-            'password' => Hash::make($request->password),
+            'password' => Hash::make($request->password)
         ]);
 
         event(new Registered($user));
