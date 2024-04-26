@@ -18,6 +18,9 @@
 					<x-nav-link :href="route('courses')" :active="request()->routeIs('courses')">
 						Kurzusok
 					</x-nav-link>
+                    <x-nav-link :href="route('submit_certificate')" :active="request()->routeIs('submit_certificate')">
+                        Igazolás leadás
+                    </x-nav-link>
                 </div>
             </div>
 
