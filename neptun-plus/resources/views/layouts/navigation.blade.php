@@ -15,16 +15,13 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-<<<<<<< HEAD
+
 					<x-nav-link :href="route('courses')" :active="request()->routeIs('courses')">
 						Kurzusok
 					</x-nav-link>
+
                     <x-nav-link :href="route('submit_certificate')" :active="request()->routeIs('submit_certificate')">
                         Igazolás leadás
-                    </x-nav-link>
-=======
-                    <x-nav-link :href="route('courses')" :active="request()->routeIs('courses')">
-                        Kurzusok
                     </x-nav-link>
 
                     {{-- Roles: Teacher - 1, Student - 2 --}}
@@ -33,7 +30,6 @@
                             Jelenlét vezetés
                         </x-nav-link>
                     @endif
->>>>>>> 3faa5a58ab375874a360cbd8876126426ce82047
                 </div>
             </div>
 
