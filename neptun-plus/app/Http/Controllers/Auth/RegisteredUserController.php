@@ -39,7 +39,6 @@ class RegisteredUserController extends Controller
             'neptun_code' => $request->neptun_code,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role_id' => 1
         ]);
 
         event(new Registered($user));
