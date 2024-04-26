@@ -33,20 +33,20 @@
                             <tbody>
                                 @foreach ($user->courses as $course)
                                     <tr>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-center">
                                             <div class="text-sm text-gray-900">{{ $course->subject->code }}</div>
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-center">
                                             <div class="text-sm text-gray-900">{{ $course->subject->name }} -
                                                 {{ $course->subject->type }}.</div>
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-center">
                                             <div class="text-sm text-gray-900">{{ $course->code }}</div>
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-center">
                                             <button>Órák</button>
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-center">
                                             <button>Jegyek</button>
                                         </td>
                                     </tr>
