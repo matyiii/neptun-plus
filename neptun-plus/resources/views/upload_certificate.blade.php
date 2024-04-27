@@ -6,7 +6,7 @@
                     <h1 class="text-2xl mb-4 font-bold">Igazolás feltöltése</h1>
                     <div class="overflow-x-auto">
                         <table class="min-w-full divide-y divide-gray-200">
-                            <form action="{{ route('certificate.upload') }}" method="post" enctype="multipart/form-data">
+                            <form action="{{ route('certificate.upload.pdf') }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <input type="file" name="certificate">
                                 <button type="submit">Feltöltés</button>
