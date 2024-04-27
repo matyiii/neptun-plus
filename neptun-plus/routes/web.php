@@ -12,7 +12,8 @@ Route::get('/', function () {
 });
 
 Route::middleware('auth')->group(function () {
-	Route::get('/submit-certificate', [CertificateController::class, 'submit'])->name('submit_certificate');
+	Route::get('/submit_certificate', [CertificateController::class, 'certificate_view'])->name('submit_certificate');
+	Route::get('/upload_certificate', [CertificateController::class, 'upload_view'])->name('certificate.upload');
 
 	Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 	
