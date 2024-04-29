@@ -22,6 +22,7 @@
                                         <th class="px-4 py-2">Neptun Code</th>
                                         <th class="px-4 py-2">Email</th>
                                         <th class="px-4 py-2">Jelenlét</th>
+                                        <th class="px-4 py-2">Igazolt Hiányzás</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -36,11 +37,19 @@
                                                         $classId,
                                                     );
                                                     $isChecked = $attendance && $attendance->present === 1;
+                                                    $isExcuseChecked = $attendance && $attendance->excuse_submitted === 1;
                                                 @endphp
                                                 <input type="hidden" name="students[{{ $student->id }}]"
                                                     value="0">
                                                 <input type="checkbox" name="students[{{ $student->id }}]"
                                                     value="1" {{ $isChecked ? 'checked' : '' }}>
+                                            </td>
+                                            <td class="border px-4 py-2 text-center">
+                                                <input type="hidden" name="justified_absences[{{ $student->id }}]" 
+                                                    value="0">
+                                                    <input type="checkbox" name="justified_absences[{{ $student->id }}]" 
+                                                    value="1" {{ $isExcuseChecked ? 'checked' : '' }}>
+
                                             </td>
                                         </tr>
                                     @endforeach

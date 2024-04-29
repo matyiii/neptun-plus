@@ -29,9 +29,11 @@ class Attendance extends Model
 		return $this->belongsTo(CourseClass::class);
 	}
 
-	public static function updateAttendances($classId, $students)
+	public static function updateAttendances($classId, $students, $justifiedAbsences)
 	{
 		foreach ($students as $userId => $present) {
+			$excuseSubmitted = isset($justifiedAbsences[$userId]) ? $justifiedAbsences[$userId] : 0;
+	
 			self::updateOrCreate(
 				[
 					'user_id' => $userId,
@@ -39,8 +41,10 @@ class Attendance extends Model
 				],
 				[
 					'present' => $present,
+					'excuse_submitted' => $excuseSubmitted, // Update excuse_submitted field
 				]
 			);
 		}
 	}
+	
 }

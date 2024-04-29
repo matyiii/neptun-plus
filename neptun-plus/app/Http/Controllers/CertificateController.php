@@ -33,30 +33,23 @@ class CertificateController extends Controller
     
 public function uploadCertificate(Request $request)
 {
-    // Ellenőrizd, hogy van-e feltöltött fájl
     if ($request->hasFile('certificate')) {
-        // Fájl beolvasása és bináris adatként tárolása
         $file = $request->file('certificate');
         $contents = file_get_contents($file);
-        
-        // Tanóra azonosító megszerzése (például az utolsó megtekintett tanóra)
+
         $classId = Auth::user()->courses->last()->classes->last()->id;
-        
-        // Felhasználó azonosító megszerzése
+
         $userId = Auth::id();
 
-        // Az útvonal, tanóra azonosító és felhasználó azonosító mentése az adatbázisba
         Attendance::create([
             'certificate_file' => $contents,
             'class_id' => $classId,
             'user_id' => $userId,
         ]);
 
-        // Sikeres feltöltés esetén visszairányítás vagy egyéb teendők
         return redirect()->back()->with('success', 'Az igazolás sikeresen feltöltve.');
     }
 
-    // Ha nincs fájl feltöltve, akkor visszairányítás hibaüzenettel
     return redirect()->back()->with('error', 'Nem található feltöltött fájl.');
 }
     

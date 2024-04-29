@@ -33,14 +33,16 @@ class AttendanceController extends Controller
 			'class_id' => 'exists:App\Models\CourseClass,id',
 			'students' => 'required|array',
 			'students.*' => 'required|in:0,1',
+			'justified_absences' => 'array', 
 		]);
-
+	
 		$validated = $validator->validate();
 		$classId = $validated['class_id'];
 		$students = $validated['students'];
-
-		Attendance::updateAttendances($classId, $students);
-
+		$justifiedAbsences = $request->input('justified_absences'); 
+	
+		Attendance::updateAttendances($classId, $students, $justifiedAbsences);
+	
 		return redirect()->back();
 	}
 }
