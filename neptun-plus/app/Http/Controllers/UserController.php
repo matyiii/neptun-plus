@@ -29,4 +29,31 @@ class UserController extends Controller
 
 		return view('attendance.management')->with($additionalData);
 	}
+
+	public function schedule()
+	{
+		$user = Auth::user()->load([
+			'role',
+			'courses',
+			'courses.subject',
+			'courses.classes',
+			'courses.classes.attendances',
+			'attendances'
+		]);
+
+		$sortedClasses = $user->courses->flatMap(function ($course) use ($user) {
+			return $course->classes->map(function ($class) use ($course, $user) {
+				$class->attendance = $class->attendances->first(fn ($att) => $att->user_id === $user->id);
+				$class->subject = $course->subject;
+				return $class;
+			});
+		})->sortByDesc('class_date');
+
+		$additionalData = [
+			'user' => $user,
+			'sortedClasses' => $sortedClasses
+		];
+
+		return view('schedule')->with($additionalData);
+	}
 }
