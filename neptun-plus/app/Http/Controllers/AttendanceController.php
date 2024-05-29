@@ -43,6 +43,6 @@ class AttendanceController extends Controller
 	
 		Attendance::updateAttendances($classId, $students, $justifiedAbsences);
 	
-		return redirect()->back();
+		return redirect()->back()->with('success', 'Jelenlét sikeresen rögzítve!');
 	}
 }

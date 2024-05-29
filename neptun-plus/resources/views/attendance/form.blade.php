@@ -12,6 +12,11 @@
                     <h1 class="text-2xl mb-4 font-bold">Jelenlét rögzítő</h1>
                     <h2 class="mb-4 font-bold">Kiválasztott tárgy: {{ $subject->name }}</h2>
                     <h2 class="mb-4 font-bold">Időpont: {{ $classDate }}</h2>
+                    @if (session('success'))
+                        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
+                            {{ session('success') }}
+                        </div>
+                    @endif
                     <div class="overflow-x-auto">
                         <form action="{{ route('attendance.submit') }}" method="POST">
                             @csrf
@@ -37,7 +42,8 @@
                                                         $classId,
                                                     );
                                                     $isChecked = $attendance && $attendance->present === 1;
-                                                    $isExcuseChecked = $attendance && $attendance->excuse_submitted === 1;
+                                                    $isExcuseChecked =
+                                                        $attendance && $attendance->excuse_submitted === 1;
                                                 @endphp
                                                 <input type="hidden" name="students[{{ $student->id }}]"
                                                     value="0">
@@ -45,9 +51,9 @@
                                                     value="1" {{ $isChecked ? 'checked' : '' }}>
                                             </td>
                                             <td class="border px-4 py-2 text-center">
-                                                <input type="hidden" name="justified_absences[{{ $student->id }}]" 
+                                                <input type="hidden" name="justified_absences[{{ $student->id }}]"
                                                     value="0">
-                                                    <input type="checkbox" name="justified_absences[{{ $student->id }}]" 
+                                                <input type="checkbox" name="justified_absences[{{ $student->id }}]"
                                                     value="1" {{ $isExcuseChecked ? 'checked' : '' }}>
 
                                             </td>
