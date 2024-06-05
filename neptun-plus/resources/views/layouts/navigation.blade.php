@@ -20,6 +20,10 @@
 						Kurzusok
 					</x-nav-link>
 
+					<x-nav-link :href="route('schedule')" :active="request()->routeIs('schedule')">
+						Órarend
+					</x-nav-link>
+
                     {{-- Roles: Teacher - 1, Student - 2 --}}
                     @if (Auth::user()->role_id === 2)
                         <x-nav-link :href="route('submit_certificate')" :active="request()->routeIs('submit_certificate')">

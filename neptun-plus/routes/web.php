@@ -21,6 +21,8 @@ Route::middleware('auth')->group(function () {
 	
 	Route::get('/courses', [UserController::class, 'courses'])->name('courses');
 
+	Route::get('/schedule', [UserController::class, 'schedule'])->name('schedule');
+
 	Route::middleware(['role:teacher'])->group(function () {
 		Route::get('/attendance_management', [UserController::class, 'listClasses'])->name('attendance.management');
 		Route::get('/attendance_management/{class_id}', [AttendanceController::class, 'showManageForm'])->name('attendance.form');
